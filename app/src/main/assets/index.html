@@ -5,16 +5,34 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AAVC</title>
 <style>
-body{margin:0;background:#1a070c;color:#f8e7c7;font-family:sans-serif;text-align:center;padding:40px}
-h1{color:#e6c16a}
-.card{background:#2b1016;border-radius:16px;padding:24px;margin:16px}
+body{margin:0;background:#1a070c;color:#f8e7c7;font-family:sans-serif}
+h1{color:#e6c16a;text-align:center}
+.card{background:#2b1016;border-radius:16px;padding:20px;margin:20px;text-align:center}
+button{background:#e6c16a;color:#1a070c;border:none;padding:12px 24px;border-radius:8px;margin:8px;font-size:16px}
+#home{display:none}
 </style>
 </head>
 <body>
+<div id="loading">
 <h1>అన్నపూర్ణ Astrology</h1>
 <div class="card">
 <p>AAVC v1.0</p>
 <p>జాతకం లోడ్ అవుతోంది...</p>
 </div>
+</div>
+<div id="home">
+<h1>అన్నపూర్ణ Astrology</h1>
+<div class="card">
+<button onclick="alert('జాతకం')">జాతకం</button>
+<button onclick="alert('వాస్తు')">వాస్తు</button>
+<button onclick="alert('పంచాంగం')">పంచాంగం</button>
+</div>
+</div>
+<script>
+setTimeout(function(){
+document.getElementById('loading').style.display='none';
+document.getElementById('home').style.display='block';
+},2000);
+</script>
 </body>
 </html>
